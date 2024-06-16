@@ -1,0 +1,112 @@
+/* --------------------------------------------------- */
+/* -------------------- Global CSS ------------------- */
+/* --------------------------------------------------- */
+
+/* ======================================================================== */
+/* 1. Fonts */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* 2. CSS */
+/* ======================================================================== */
+
+:root {
+	/* Whites */
+	--ColorWhite: #ffffff;
+	--ColorWhiteFafafa: #fafafa;
+	/* Blacks */
+	--ColorBlack: #000000;
+	--ColorBlack-1: #030303;
+	--ColorBlack-85: rgba(3, 3, 3, 0.85);
+	--ColorBlack-7: rgba(3, 3, 3, 0.7);
+	--ColorBlack-5: rgba(3, 3, 3, 0.5);
+	--ColorBlack-35: rgba(3, 3, 3, 0.35);
+	--ColorBlack-2: rgba(3, 3, 3, 0.2);
+	--ColorBlackHover: #0c0c0c;
+	/* Icons */
+	--ColorSocialIcons: #bebdbd;
+	/* Footer */
+	--ColorFooterDivider: #505152;
+	--ColorFooterGrey: #d6d6d6;
+	--ColorFooterWhite: #dddddd;
+	--ColorFooterWhiteOP: #f8f8f8c9;
+	/* Fonts */
+	--FontLora: "Lora", Georgia, serif;
+	--FontBebas: "Bebas Neue", Arial, Helvetica, sans-serif;
+	--FontWork: "Work Sans", Arial, Helvetica, sans-serif;
+	--FontColorDark: #181b20;
+	--FontColorGrey: #656a70;
+	/* Utils */
+	--MainTransition: all 0.3s linear;
+	--TransitionFast: all 0.24s linear;
+	--ShadowLighter: 0px 3px 9px rgba(0, 0, 0, 0.05);
+	--ShadowLight: 0px 3px 9px rgba(0, 0, 0, 0.1);
+	--ShadowDark: 0px 3px 9px rgba(0, 0, 0, 0.23);
+	--WidthMax: 1350px;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--ColorFooterDivider);
+}
+
+/* ======================================================================== */
+/* 3. Custom Classes */
+/* ======================================================================== */
+.section-center {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-height100-desk {
+	/* Nav: 10rem; Footer: 5rem */
+	min-height: calc(100vh - 15rem);
+}
+
+.page-height100-mobile {
+	/* Nav: 6rem; Footer: 5rem */
+	min-height: calc(100vh - 11rem);
+}
+
+/* ======================================================================== */
+/* 4. Queries */
+/* ======================================================================== */
+
+/*
+::: Device Sizes :::
+    Mobile: 320px - 425px
+    Tablet: 768px
+    Laptop: 1024px
+    Desktop: 1440px
+    LargeScreen: 2560px;
+*/
+
+/*
+::: Nav and Footer Heights ::::
+    Mobile: 10rem;
+    768px: 11.3rem
+    980px: 11.5rem;
+*/
+
+@media screen and (min-width: 768px) {
+	.section-center {
+		width: 88%;
+	}
+}
